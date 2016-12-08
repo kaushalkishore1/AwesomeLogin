@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg2"
+        android:src="@color/Black_70">
+
+    </ImageView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:weightSum="5"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight=".3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_skip"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:fontFamily="sans-serif"
+                    android:gravity="right|center"
+                    android:onClick="true"
+                    android:paddingRight="5dp"
+                    android:text="Version 2.5.2"
+                    android:textColor="@color/White_100"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_horizontal"
+                    android:src="@drawable/k" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2.5"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight=".8"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:id="@+id/login_forgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:text="Sign In(Business)"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/White_95" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <EditText
+                        android:id="@+id/ed_login_bdm_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textbg"
+                        android:cursorVisible="true"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="San-Serif"
+                        android:hint="UserName"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:textColor="@color/White_100"
+                        android:textColorHint="@drawable/hint_selector" />
+
+
+                </LinearLayout>
+
+                <!--  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="0.5dp"
+                      android:layout_marginLeft="30dp"
+                      android:layout_marginRight="30dp"
+                      android:background="@android:color/white" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textbg"
+                        android:cursorVisible="true"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="San-Serif"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColor="@color/White_100"
+                        android:textColorHint="@drawable/hint_selector" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/ripple_signin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="@color/White_100"
+                        app:mrl_rippleDuration="50"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_signin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/signinbutton"
+                            android:fontFamily="sans-serif"
+                            android:text="Sign-In"
+                            android:textColor="@color/White_100"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                </LinearLayout>
+
+                <!-- <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:layout_marginLeft="30dp"
+                     android:layout_marginRight="30dp"
+                     android:background="@android:color/white" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_forget_password_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left|center"
+                        android:onClick="true"
+                        android:text="Forgot Password"
+                        android:textColor="@color/White_95"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
